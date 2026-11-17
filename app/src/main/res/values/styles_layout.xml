@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Section title inside a page: 32 dp above (new group), 12 dp below (related content). -->
+    <style name="SectionTitle" parent="T.Title">
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+    <!-- Row with a section title and a "See all" button. -->
+    <style name="SectionHeader">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+</resources>

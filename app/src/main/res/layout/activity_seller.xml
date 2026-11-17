@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <FrameLayout android:id="@+id/bottom_area" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:divider="@null" android:listSelector="@android:color/transparent" android:paddingBottom="96dp" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:text="@string/add_product"
+            android:textAppearance="@style/T.Button"
+            android:textColor="@color/on_accent"
+            android:visibility="gone"
+            app:backgroundTint="@color/accent"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@color/on_accent" />
+    </FrameLayout>
+</LinearLayout>

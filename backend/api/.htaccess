@@ -1,0 +1,4 @@
+# Never serve the settings file that holds the passwords.
+<Files "config.local.php">
+    Require all denied
+</Files>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/sky_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_tile"
+        android:importantForAccessibility="no"
+        android:padding="8dp"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/sky_label"
+        style="@style/T.Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/sky_time"
+        style="@style/T.BodyStrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="ltr" />
+</LinearLayout>

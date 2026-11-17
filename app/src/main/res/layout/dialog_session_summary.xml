@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView android:layout_width="64dp" android:layout_height="64dp" android:background="@drawable/bg_circle_soft" android:importantForAccessibility="no" android:padding="16dp" android:src="@drawable/ic_trophy" app:tint="@color/accent_strong" />
+    <TextView style="@style/T.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/session_summary_title" />
+    <TextView android:id="@+id/sum_message" style="@style/T.Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:textAlignment="center" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <TextView android:id="@+id/sum_time" style="@style/T.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" />
+            <TextView style="@style/T.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sum_time" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <TextView android:id="@+id/sum_catches" style="@style/T.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView style="@style/T.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stat_catches" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <TextView android:id="@+id/sum_kg" style="@style/T.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView style="@style/T.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stat_kg" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

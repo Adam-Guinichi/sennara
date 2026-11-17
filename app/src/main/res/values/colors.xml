@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 60 % neutral base · 30 % deep-sea ink · 10 % coral accent (CTAs only). -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="sea_900">#063B50</color>
+    <color name="primary">#0B5C7A</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_soft">#E5F1F5</color>
+    <color name="primary_soft_strong">#B9D9E5</color>
+    <color name="accent">#FF7A45</color>
+    <color name="accent_strong">#E8551E</color>
+    <color name="on_accent">#2A1205</color>
+    <color name="accent_soft">#FFEDE4</color>
+    <color name="bg">#F4F7F8</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface2">#EBF0F2</color>
+    <color name="text">#0D2230</color>
+    <color name="text2">#4E616C</color>
+    <color name="text3">#84949D</color>
+    <color name="line">#E2E9EC</color>
+    <color name="outline">#A7B6BE</color>
+    <!-- Shadows are tinted with the ink colour, never pure black. -->
+    <color name="shadow">#550D2230</color>
+    <color name="scrim_top">#66000000</color>
+    <color name="scrim_bottom">#E6061E29</color>
+    <color name="on_photo_good">#9BF0C1</color>
+    <color name="on_photo_bad">#FFB4A8</color>
+    <color name="on_photo_muted">#D6E6EC</color>
+    <!-- Verdict levels: strong colours are kept for these meaningful moments. -->
+    <color name="lv_great">#0E7A4A</color>
+    <color name="lv_great_soft">#DCF4E7</color>
+    <color name="lv_good">#3F7A12</color>
+    <color name="lv_good_soft">#ECF5DC</color>
+    <color name="lv_fair">#9C5600</color>
+    <color name="lv_fair_soft">#FDF0DA</color>
+    <color name="lv_poor">#A3400F</color>
+    <color name="lv_poor_soft">#FCE6DB</color>
+    <color name="lv_unsafe">#C4291C</color>
+    <color name="lv_unsafe_soft">#FDE4E1</color>
+</resources>

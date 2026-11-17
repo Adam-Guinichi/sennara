@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solid top bar that fades in when a photo header scrolls away (see BaseActivity.photoHeader). -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0"
+    android:background="@color/bg"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/scroll_title"
+        style="@style/T.BodyStrong"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="76dp"
+        android:paddingEnd="124dp" />
+</FrameLayout>

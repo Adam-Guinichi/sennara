@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+
+    <FrameLayout android:layout_width="240dp" android:layout_height="240dp">
+
+        <FrameLayout
+            android:id="@+id/photo_frame"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_soft"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/Shape.Circle" />
+        </FrameLayout>
+
+        <ImageView android:id="@+id/check" android:layout_width="56dp" android:layout_height="56dp" android:layout_gravity="bottom|end" android:layout_margin="16dp" android:background="@drawable/bg_check" android:importantForAccessibility="no" android:padding="12dp" android:src="@drawable/ic_check" app:tint="@color/white" />
+        <ImageView android:id="@+id/s1" android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="top|start" android:layout_margin="8dp" android:importantForAccessibility="no" android:src="@drawable/ic_sparkle" app:tint="@color/accent" />
+        <ImageView android:id="@+id/s2" android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="top|end" android:layout_margin="20dp" android:importantForAccessibility="no" android:src="@drawable/ic_sparkle" app:tint="@color/lv_great" />
+        <ImageView android:id="@+id/s3" android:layout_width="18dp" android:layout_height="18dp" android:layout_gravity="bottom|start" android:layout_margin="24dp" android:importantForAccessibility="no" android:src="@drawable/ic_sparkle" app:tint="@color/primary" />
+    </FrameLayout>
+
+    <TextView android:id="@+id/title" style="@style/T.Display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" />
+    <TextView android:id="@+id/detail" style="@style/T.BodyStrong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" />
+    <TextView android:id="@+id/where" style="@style/T.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" />
+
+    <TextView
+        android:id="@+id/pb"
+        style="@style/Pill"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_pb"
+        android:text="@string/personal_best"
+        android:textColor="@color/accent_strong" />
+
+    <TextView android:id="@+id/badges_title" style="@style/T.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/new_badges" />
+    <LinearLayout android:id="@+id/badges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="horizontal" />
+
+    <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+
+    <Button android:id="@+id/done" style="@style/Btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/done" />
+    <Button android:id="@+id/share" style="@style/BtnText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/share" app:icon="@drawable/ic_share" />
+</LinearLayout>

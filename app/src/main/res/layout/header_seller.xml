@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:id="@+id/my_shop_status" style="@style/Pill" android:layout_marginBottom="8dp" android:visibility="gone" />
+            <TextView android:id="@+id/my_shop_name" style="@style/T.Title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/my_shop_info" style="@style/T.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+            <Button android:id="@+id/btn_edit_shop" style="@style/BtnTonal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/edit_shop" app:icon="@drawable/ic_edit" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout style="@style/SectionHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp">
+        <TextView style="@style/T.Title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/my_products" />
+        <TextView android:id="@+id/product_count" style="@style/T.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
